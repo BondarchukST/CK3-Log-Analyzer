@@ -26,3 +26,10 @@ Regarding mod compatibility: no fancy tricks here. The parser checks which mods 
 There was an idea to make a real-time parser with directory sorting, but my hardware nearly died from the load, and it worked poorly. So, static analysis only. Launch the game, wait until the main menu loads, then start scanning. It's preliminary—more errors will accumulate during gameplay.
 
 That's about it. Might be useful to someone.
+
+ck3_log_parser_Multithreading.py
+--------------------------------
+Multithreaded mod indexing
+Uses a thread pool (ThreadPoolExecutor) to simultaneously crawl the mod directories in the Workshop and local folders to quickly build a file map and prepare a database for error distribution.
+Error classification - single-threaded;
+The indexing of mods - multithreaded .
