@@ -31,5 +31,6 @@ ck3_log_parser_Multithreading.py
 --------------------------------
 Multithreaded mod indexing
 Uses a thread pool (ThreadPoolExecutor) to simultaneously crawl the mod directories in the Workshop and local folders to quickly build a file map and prepare a database for error distribution.
-Error classification - single-threaded;
-The indexing of mods - multithreaded .
+## ✨ Features:
+- ✅ **Error classification - single-threaded**
+- ✅ **The indexing of mods - multithreaded**
